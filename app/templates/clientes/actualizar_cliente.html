@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+                
+    <h1 class="text-center">
+        Actualizar datos del Cliente
+    </h1>      
+    
+        <form action="{{ url_for('clientes_bp.actualizar_cliente', cliente_id=cliente.IdCliente) }}" method="POST" class="form-principal">  
+            
+            <div class="campos">
+               
+                <div class="caja">
+                    <label for="" class="label">
+                        Cod. Cliente
+                    </label>
+                    <input type="text" class="campo" name="InputIdCliente" id="InputIdCliente" disabled value="{{ cliente.IdCliente }}">
+                </div>
+
+                <div class="caja">
+                    <label for="" class="label">
+                        Tipo Cliente
+                    </label>
+                    <select class="campo" name="InputIdTipoCliente" id="InputIdTipoCliente">
+                        {% for tipoCliente in tiposCliente %}
+                            <option value="{{ tipoCliente.IdTipoCliente }}" {% if tipoCliente.IdTipoCliente == cliente.IdTipoCliente %} selected {% endif %}>
+                                {{ tipoCliente.TipoCliente }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="caja">
+                    <label for="" class="label">
+                        CC o NIT
+                    </label>
+                    <input type="text" class="campo" name="InputCC_Nit" id="InputCC_Nit" value="{{ cliente.CC_NIT }}">
+                </div>
+
+                <div class="caja">
+                    <label for="" class="label">
+                        Nombre
+                    </label>
+                    <input type="text" class="campo" name="InputNombre" id="InputNombre" value="{{ cliente.Nombre }}">
+                </div>
+                
+                <div class="caja">
+                    <label for="" class="label">
+                        Ciudad
+                    </label>
+                    <select class="campo" name="InputIdCiudad" id="InputIdCiudad">
+                        {% for ciudad in ciudades %}
+                            <option value="{{ ciudad.IdCiudad }}" {% if ciudad.IdCiudad == cliente.IdCiudad %} selected {% endif %}>
+                                {{ ciudad.Ciudad }}
+                            </option>
+                        {% endfor %}
+                    </select>    
+                </div>
+
+                <div class="caja">
+                    <label for="" class="label">
+                        Direccion
+                    </label>
+                    <input type="text" class="campo" name="InputDireccion" id="InputDireccion" value="{{ cliente.Direccion }}">
+                </div>
+                              
+                <div class="caja">
+                    <label for="" class="label">
+                        email
+                    </label>
+                    <input type="text" class="campo medium" name="InputEmail" id="InputEmail" value="{{ cliente.email }}">
+                </div>
+
+                <div class="caja">
+                    <label for="" class="label">
+                        Telefono
+                    </label>
+                    <input type="text" class="campo normal" name="InputTelefono" id="InputTelefono" value="{{ cliente.telefono }}">
+                </div>
+
+            </div>  
+                <div class=footer-buttons>
+                    <button type="submit" class="btn btn-success btn-sm text-center">
+                        Guardar
+                    </button>
+
+                <!--<button onClick="prueba()" class="btn btn-success btn-sm text-center">prueba</button> -->
+            </div>        
+        </form>
+
+        
+</div>
+
+<script>
+function prueba(){
+    var IdCliente = document.getElementById('InputIdCliente').value
+    var IdTipoCliente = document.getElementById('InputIdTipoCliente').value
+    var CC_Nit = document.getElementById('InputCC_Nit').value
+    var Nombres = document.getElementById('InputNombres').value
+    var IdCiudad = document.getElementById('InputIdCiudad').value
+    var Direccion = document.getElementById('InputDireccion').value
+    var Email = document.getElementById('InputEmail').value
+    var Telefono = document.getElementById('InputTelefono').value
+
+
+    alert(IdCliente +","+ IdTipoCliente +","+ CC_Nit +","+ Nombres +","+ IdCiudad +","+ Direccion +","+ Email +","+ Telefono)
+}
+</script>
+{% endblock %}

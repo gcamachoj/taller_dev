@@ -1,0 +1,413 @@
+* {
+    margin: 0;   /* quitamos margenes */
+    padding: 0;   /* quitamos margenes internas*/
+    background-color: rgb(245, 243, 243);
+}
+html, body{
+    height: 100%;
+}
+
+header{
+    display:block;
+    height:100%;
+    max-height: 350px;
+    width:100%;
+    overflow: hidden;
+}
+
+.title {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    color: #085394;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.fondo{
+    height:100%;
+}
+.fondo img {
+   width:100%;
+    height:100%;
+}   
+/*------ contenido ---------------*/
+
+.modulo-registro-user {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(245, 243, 243);
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 100px;
+ 
+}
+
+
+
+.content{
+    width:100%;
+}
+
+.content .container h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size:x-large;
+}
+
+.content .container .row {
+    padding: 10px;
+}
+
+.table .btn {
+    width: auto;
+    padding: 5px 5px;
+    margin: 0 3px;
+    font-size:x-small;
+    border-style:none;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+     background-color: rgb(245, 243, 243);
+   max-width: 100%;
+   overflow: hidden;
+}
+
+.contenido .label-login{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight:500;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(61, 60, 60);
+}
+
+.footer-buttons {
+    text-align: center;
+    padding: 10px;
+    display: block;
+    width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+    clear: both;  /* Limpia flotados anteriores */
+}
+
+
+.container .footer-buttons{
+    text-align:center;
+    padding: 10px;
+    display: block;
+}
+
+#footer-buttons{
+    text-align:center;
+    padding: 10px;
+}
+
+
+
+.footer-buttons input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3750bd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-buttons input[type="submit"]:hover {
+    background-color: #3d29b3;
+}
+
+/* Login **/
+.contenido .input-txt{
+    display: flex;
+    margin:auto;
+    padding: 5px;    
+}
+
+
+.head-buttons {
+    padding: 10px;
+}
+.form-login{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-login .caja {
+    display: block;
+    text-align: center;
+}
+
+.form-login .caja label{
+    display: block;
+    text-align: center;
+    
+}
+
+
+
+/*  ---- cierra contenido ---------*/
+
+
+
+/* aside----------------------------------*/
+aside{
+    width:20%;
+    background-color: rgb(129, 148, 170);
+    height: 1000px;
+    /*height:100vh;*/
+    min-height: 100%;/* Para que el aside se extienda a la altura del content */
+    
+    
+    
+}
+
+aside .contenido-aside{
+    background-color: inherit;
+    min-height: 100%;/* Para que el aside se extienda a la altura del content */
+    
+}
+
+a#btn-aside-menu{
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(182, 176, 176);
+}
+.contenido-aside .titulo-menu {
+    background-color: rgba(19, 16, 16, 0.473);
+    color: rgb(182, 176, 176);
+    font-size: larger;
+    padding: 10px;
+    font-weight:bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contenido-aside .linea-normal{  
+    background-color: inherit;
+    font-size: large;
+    text-align: center;
+    padding: 10px 0 10px;
+    cursor: pointer;
+    line-break: auto;
+    }
+
+.contenido-aside .linea-normal a{
+    text-decoration: none;
+    background-color: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.contenido-aside .linea-normal.padre{
+    background-color: rgba(19, 16, 16, 0.473);
+    color: rgb(182, 176, 176);
+}
+
+.contenido-aside .linea-normal.padre:hover{
+    background-color: rgba(19, 16, 16, 0.473);
+    
+    }
+
+.contenido-aside .linea-normal:hover{
+    background-color: aliceblue;
+}
+
+
+.content .container .row table {
+    --bs-table-bg: none; /* Anula el valor de --bs-table-bg */
+
+}
+
+
+
+/**** fin aside ---------------------------------*/
+
+
+.work-area{
+    width:80%;
+    display: block;
+    max-width: 100%;
+   }
+
+.work-area .title{
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+
+.form-principal{
+  
+    display:flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content:center;
+    margin: 0 5px;
+
+}
+.campos{
+    display:flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content:center;
+    margin: 0 auto;
+    
+}
+.form-principal .caja {
+
+    padding: 10px;
+    text-align: center;
+   
+
+}  
+
+.form-principal .caja.radio{
+    border: 2px solid white;
+}
+
+.label{
+    display: block;
+    color:rgb(105, 102, 102)
+}
+
+.campo{
+    border:1px solid rgba(240, 223, 223, 0.877);
+    background-color: white;
+    border-radius:4px;
+    padding: 4px;
+    font-size: 20px;
+
+}  
+
+.center {
+    text-align: center;
+}
+
+.caja.memo {
+    width: 100%;
+    
+}
+
+
+.imagen-form{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:350px;
+    overflow: hidden;
+    border: 2px solid white;
+    padding: 2px;
+    justify-content: center;
+    margin: auto;
+}
+
+textarea {
+    width: 100%;
+    height: 150px; /* Ajusta la altura según sea necesario */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+
+
+
+.imagen-form img{
+    display: flex;
+  width: 90%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  margin: auto;
+  opacity: 0.5;
+  
+}
+
+.imagen-form label{
+    text-align: center;
+    padding: 3px;
+    background-color: darkgray;
+}
+.botones {
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+    
+}
+
+/**** medias queryes -------*/
+
+
+/* hasta 346px */
+@media screen and (max-width: 346px){
+.caja {
+    width: 250px;
+    display: inline-block;
+    margin: auto;
+}
+
+
+select{
+    width:250px;
+    
+}
+
+textarea{
+    width:250px;
+}
+
+.form-principal{
+    display: block;
+
+}
+
+
+}
+
+
+/*-- hasta 768 */
+@media screen and (max-width: 768px){
+.contenido {
+    flex-direction: column;
+}
+
+aside {
+    width: 100%;
+    order:1;
+    height: auto;
+}
+
+.work-area{
+    width:100%;
+    order:2;
+}
+.campos{
+    display: block;
+}
+
+#btn-aside-menu{
+    text-decoration: none;
+}
+
+}
+
+/* cuando pasa los 768px */
+@media screen and (min-width: 768px){
+    .fondo img {
+        height:600px;
+
+    }
+    .form-principal{
+        display: flex;
+    }
+
+    }

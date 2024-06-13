@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+
+    <h1 class= "text-center">Listado de Ordenes</h1>
+    <div class="head-buttons">
+        <a class="btn btn-success btn-sm" href="{{ url_for('ordenes_bp.crear_orden')}}">Crear</a>
+    </div>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <div class="table table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>IdOrden</th>
+                    <th>Estado</th>
+                    <th>Cliente</th>
+                    <th>Vehiculo</th>
+                    <th>Mecánico</th>
+                    <th>KM Entrada</th>
+                    <th>Fecha Ingreso</th>
+                    <th>Fecha Cierre</th>
+                    <th>Observaciones</th>
+                    
+                    <th style="width: 200px;">Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for orden in ordenes %}
+                <tr>
+                    <td>{{ orden.IdOrden }}</td>
+                    <td>{{ orden.estado_os.EstadoOS }}</td>
+                    <td>{{ orden.cliente.Nombre }}</td>
+                    <td>{{ orden.vehiculo.Placa }}</td>
+                    <td>{{ orden.empleado.Nombres }}</td>
+                    <td>{{ orden.KM_Entrada }}</td>
+                    <td>{{ orden.FechaIngreso }}</td>
+                    <td>{{ orden.FechaFinServicio }}</td>    
+                    <td>{{ orden.Observaciones }}</td>    
+                    <td>
+                        <form action="{{ url_for('ordenes_bp.detalleOrden', orden_id=orden.IdOrden) }}" method="GET" style="display: inline; background-color: transparent; border: none; padding: 0;">
+                        <button type="submit" class="btn btn-info btn-sm">Detalles</button>
+                    </form>
+                    
+                        <form action="{{ url_for('ordenes_bp.actualizar_orden', orden_id = orden.IdOrden)}}" method="GET" style="display: inline; background-color: transparent; border: none; padding: 0;">
+                        <button type="submit" class="btn btn-warning btn-sm">Editar</button>
+                    </form>
+                
+                    
+                    <form action="{{ url_for('ordenes_bp.eliminar_Orden', orden_id = orden.IdOrden )}}" method="DELETE" style="display: inline; background-color: transparent; border: none; padding: 0">
+                    <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                    </form>  
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

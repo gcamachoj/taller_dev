@@ -1,0 +1,10 @@
+# Entorno virtual
+venv/
+
+# Archivos y carpetas temporales de Python
+*.pyc
+__pycache__/
+
+# Configuraciones del sistema operativo
+.DS_Store
+.vscode/
