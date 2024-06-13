@@ -44,7 +44,7 @@ INSERT INTO marcas (marca) VALUES
 ('Ford'),
 ('Chevrolet');
 
-INSERT INTO tipos_Carroceria (TipoCarroceria) VALUES
+INSERT INTO tipos_carroceria (TipoCarroceria) VALUES
 ('Sedán'),
 ('Hatchback'),
 ('SUV'),
@@ -65,5 +65,5 @@ insert into empleados (CC, Nombres, Apellidos, IdCargo, Direccion, Email, Telefo
 values ('1111', 'Jose Rayo', 'Perez', 1, 'calle 100','joserayo@prueba.com', '12345678', 1, 1);
 
 
---- Poblar tabla Estado_os
+--- Poblar tabla estado_os
 insert into estado_os(estadoOS) values ('Abierta'), ('Cerrada'), ('Cancelada');
