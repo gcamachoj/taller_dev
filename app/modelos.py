@@ -4,7 +4,7 @@ from extensions import db
 
 # Se crea el modelo de datos para la tabla TipoCliente
 class TipoCliente(db.Model):
-    __tablename__='Tipo_Cliente'
+    __tablename__='tipo_cliente'
     IdTipoCliente = db.Column(db.Integer, primary_key=True)
     TipoCliente = db.Column(db.String(45), nullable = False)
     IdEstado = db.Column(db.Integer, nullable=False)
@@ -21,7 +21,7 @@ class TipoCliente(db.Model):
 class Cliente(db.Model):
     __tablename__ = 'clientes'    
     IdCliente = db.Column(db.Integer, primary_key=True)
-    IdTipoCliente = db.Column(db.Integer, db.ForeignKey('Tipo_Cliente.IdTipoCliente'), nullable=False)
+    IdTipoCliente = db.Column(db.Integer, db.ForeignKey('tipo_cliente.IdTipoCliente'), nullable=False)
     CC_NIT = db.Column(db.String(50), nullable = False)
     Nombre = db.Column(db.String(100), nullable = False)
     IdCiudad = db.Column(db.Integer, nullable = False)
