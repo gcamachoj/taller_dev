@@ -2,12 +2,12 @@
 
 ## Indice
 - [Introducción](#Introducción)
-- [INSTRUCCIONES DE EJECUCION DEMO CODESPACES](#INSTRUCCIONES DE EJECUCION DEMO CODESPACES)
-- [Instancias Inactivas en Codespasces](### Instancias Inactivas en Codespasces)
-- [INSTRUCCIONES INSTALACION DEL APLICATIVO - ENTORNO DE PRUEBAS (WINDOWS)](## INSTRUCCIONES INSTALACION DEL APLICATIVO - ENTORNO DE PRUEBAS (WINDOWS)
-)
-- [Instalación de la base de datos](## Instalación de la base de datos ##)
-
+- [INSTRUCCIONES DE EJECUCION DEMO CODESPACES](#INSTRUCCIONES-DE-EJECUCION-DEMO-CODESPACES)
+- [Instancias Inactivas en Codespasces](###Instancias-Inactivas-en-Codespasces)
+- [INSTRUCCIONES INSTALACION DEL APLICATIVO EN ENTORNO DE PRUEBAS PARA WINDOWS](##INSTRUCCIONES-INSTALACION-DEL-APLICATIVO-EN-ENTORNO-DE-PRUEBAS-PARA-WINDOWS)
+- [Esquema Relacional de Base de Datos](##Esquema-de-Base-de-Datos-Relacional)
+- [Instalación de la base de datos](##Instalación-de-la-base-de-datos)
+- [Creacion de usuario](##Creacion-de-Usuario)
 
 ## Introducción 
 
@@ -42,7 +42,7 @@ Ejecute: ***flask run***
 5. EL sistema generará una dirección de acceso a la página. Puede usar ese link para ingresar a realizar las pruebas de la aplicación.  Adicional el sistema preguntará si desea generar un link publico que podrá compartir con otros dispositivos en la web.
 
 
-## INSTRUCCIONES INSTALACION DEL APLICATIVO - ENTORNO DE PRUEBAS (WINDOWS)
+## INSTRUCCIONES INSTALACION DEL APLICATIVO EN ENTORNO DE PRUEBAS PARA WINDOWS
 
 ### Instalar el ambiente virtual de python:
 1. En su máquina (Windows), cree una carpeta para instalar el proyecto. se recomienda usar como nombre "taller_dev". Ingrese a la carpeta y ejecute el siguiente comando para crear el entorno virtual de python:
@@ -57,6 +57,7 @@ Esto cambia el prompt de la linea de comando activando el ambiente virtual.
 
 hasta aqui el proceso es similar al de la siguiente imagen:
 
+## Esquema de Base de Datos Relacional
 ![Esquema base de datos](app/static/complementos/crear_entorno_python.PNG)
 
 
