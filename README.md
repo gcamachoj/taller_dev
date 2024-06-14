@@ -1,4 +1,17 @@
-## Este aplicativo contiene MI proyecto de grado del SENA, el cual es una aplicación para gestión de ordenes de servicio en un taller automotriz.  Parte de una versión anterior del repositorio CarRepairPro_GA7_AA2_EV02. Aqui se espera desarrollar una versión con las mismas funcionalidades, pero más práctica para el despliegue en ambientes tanto pruebas como producción.
+# Proyecto Car Repaor Pro
+
+## Indice
+- [Introducción](#Introducción)
+- [INSTRUCCIONES DE EJECUCION DEMO CODESPACES](#INSTRUCCIONES DE EJECUCION DEMO CODESPACES)
+- [Instancias Inactivas en Codespasces](### Instancias Inactivas en Codespasces)
+- [INSTRUCCIONES INSTALACION DEL APLICATIVO - ENTORNO DE PRUEBAS (WINDOWS)](## INSTRUCCIONES INSTALACION DEL APLICATIVO - ENTORNO DE PRUEBAS (WINDOWS)
+)
+- [Instalación de la base de datos](## Instalación de la base de datos ##)
+
+
+## Introducción 
+
+Este aplicativo contiene MI proyecto de grado del SENA, el cual es una aplicación para gestión de ordenes de servicio en un taller automotriz.  Parte de una versión anterior del repositorio CarRepairPro_GA7_AA2_EV02. Aqui se espera desarrollar una versión con las mismas funcionalidades, pero más práctica para el despliegue en ambientes tanto pruebas como producción.
 
 Esta aplicacions consta de un backend elaborado Flask, el cual es un framework web ligero y versátil escrito en Python que se utiliza para crear aplicaciones web rápidas y escalables. Se complementa con la librería SQLAlchemy que proporciona una capa de abstracción sobre las bases de datos relacionales comportándose como un ORM (Mapeo Objeto-Relacional), para  interactuar con la base de datos utilizando objetos y consultas en lugar de escribir SQL directamente. La base de datos está elaborada en Mysql. En los complementos encontrará detalles sobre la base de datos y la estructura del desarrollo en general.
 
@@ -11,7 +24,7 @@ Validar que exista una versión instalada en github codespaces:
 Ejecute la instancia de codespaces.
 
 
-### Si la instancia en Codespaces está inactiva:
+### Instancias Inactivas en Codespasces:
 
 1. Activar el entorno virtual:
 Ejecute: ***source venv/bin/activate***
@@ -29,7 +42,7 @@ Ejecute: ***flask run***
 5. EL sistema generará una dirección de acceso a la página. Puede usar ese link para ingresar a realizar las pruebas de la aplicación.  Adicional el sistema preguntará si desea generar un link publico que podrá compartir con otros dispositivos en la web.
 
 
-## INSTRUCCIONES INSTALACION DEL APLICATIVO EN MAQUINA LOCAL (WINDOWS)
+## INSTRUCCIONES INSTALACION DEL APLICATIVO - ENTORNO DE PRUEBAS (WINDOWS)
 
 ### Instalar el ambiente virtual de python:
 1. En su máquina (Windows), cree una carpeta para instalar el proyecto. se recomienda usar como nombre "taller_dev". Ingrese a la carpeta y ejecute el siguiente comando para crear el entorno virtual de python:
