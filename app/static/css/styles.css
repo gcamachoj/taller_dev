@@ -1,8 +1,16 @@
+:root {
+    --bs-body-bg:  rgb(245, 243, 243) ; /* o el color que prefieras */
+}
 * {
     margin: 0;   /* quitamos margenes */
     padding: 0;   /* quitamos margenes internas*/
-    background-color: rgb(245, 243, 243);
+    --bs-body-bg:  rgb(245, 243, 243) ;
 }
+
+body {
+        background-color: rgb(245, 243, 243)       
+}
+
 html, body{
     height: 100%;
 }
@@ -10,9 +18,10 @@ html, body{
 header{
     display:block;
     height:100%;
-    max-height: 350px;
+    max-height: 100px;
     width:100%;
     overflow: hidden;
+    background-color: rgb(245, 243, 243);
 }
 
 .title {
@@ -344,11 +353,24 @@ textarea {
     
 }
 
+body {
+    background-color: rgb(245, 243, 243)       
+}
+
+
 /**** medias queryes -------*/
 
 
-/* hasta 346px */
+/* hasta 346px ---------------------------------------------------------------------------*/
+
+
 @media screen and (max-width: 346px){
+
+header {
+        max-height: 200px;
+        height: 200px;
+    }
+    
 .caja {
     width: 250px;
     display: inline-block;
@@ -376,6 +398,16 @@ textarea{
 
 /*-- hasta 768 */
 @media screen and (max-width: 768px){
+
+header {
+        max-height: 350px;
+        height: 327px;
+    }
+
+.fondo.img{
+    height: 60%;
+}
+  
 .contenido {
     flex-direction: column;
 }
@@ -402,10 +434,13 @@ aside {
 
 /* cuando pasa los 768px */
 @media screen and (min-width: 768px){
-    .fondo img {
-        height:600px;
-
+    
+    header {
+        max-height: 370px;
+        height: 370px;
+       
     }
+    
     .form-principal{
         display: flex;
     }
