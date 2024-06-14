@@ -66,4 +66,4 @@ values ('1111', 'Jose Rayo', 'Perez', 1, 'calle 100','joserayo@prueba.com', '123
 
 
 --- Poblar tabla estado_os
-insert into estado_os(estadoOS) values ('Abierta'), ('Cerrada'), ('Cancelada');
+insert into estado_os(EstadoOS) values ('Abierta'), ('Cerrada'), ('Cancelada');
