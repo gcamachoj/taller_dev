@@ -109,4 +109,5 @@ class Usuario(db.Model):
 #Ejecucion
     
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True)                    # Descomentar para entorno desarrollo
+    # app.run(host='0.0.0.0', port=5000)   # Descomentar para entorno producción
