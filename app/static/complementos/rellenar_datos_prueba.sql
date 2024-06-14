@@ -65,5 +65,5 @@ insert into empleados (CC, Nombres, Apellidos, IdCargo, Direccion, Email, Telefo
 values ('1111', 'Jose Rayo', 'Perez', 1, 'calle 100','joserayo@prueba.com', '12345678', 1, 1);
 
 
---- Poblar tabla estado_os
+-- Poblar tabla estado_os
 insert into estado_os(EstadoOS) values ('Abierta'), ('Cerrada'), ('Cancelada');
