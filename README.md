@@ -2,6 +2,10 @@
 
 ## Indice
 - [Introducción](#Introducción)
+- [Librerías](#Librerías)
+    - [Backend: Flask](#Backend:-Flask)
+    - [Dependencias Backend](#Dependencias-Backend)
+    - [Base de Datos: Mysql](#Base-de-Datos:-My-SQL) 
 - [Instrucciones de ejecución de ambiente de pruebas codespaces de git](#INSTRUCCIONES-DE-EJECUCION-DEMO-CODESPACES)
     - [Instancias Inactivas en Codespasces](#Instancias-Inactivas-en-Codespasces)
 - [Instalación](#Instalación)
@@ -15,6 +19,46 @@
 Este aplicativo contiene MI proyecto de grado del SENA, el cual es una aplicación para gestión de ordenes de servicio en un taller automotriz.  Parte de una versión anterior del repositorio CarRepairPro_GA7_AA2_EV02. Aqui se espera desarrollar una versión con las mismas funcionalidades, pero más práctica para el despliegue en ambientes tanto pruebas como producción.
 
 Esta aplicacions consta de un backend elaborado Flask, el cual es un framework web ligero y versátil escrito en Python que se utiliza para crear aplicaciones web rápidas y escalables. Se complementa con la librería SQLAlchemy que proporciona una capa de abstracción sobre las bases de datos relacionales comportándose como un ORM (Mapeo Objeto-Relacional), para  interactuar con la base de datos utilizando objetos y consultas en lugar de escribir SQL directamente. La base de datos está elaborada en Mysql. En los complementos encontrará detalles sobre la base de datos y la estructura del desarrollo en general.
+
+## Librerías
+El aplicativo está de sarrollado de la siguiente manera:
+
+### Backend: Flask
+Microframework: Flask es ligero y no incluye herramientas o bibliotecas adicionales que no sean necesarias. Esto lo hace ideal para pequeñas aplicaciones web o servicios web, aunque también puede escalar para proyectos más grandes con la adición de extensiones.
+
+Flexibilidad: Flask proporciona mucha libertad a los desarrolladores para estructurar su aplicación de la manera que prefieran, sin imponer un patrón específico. Esto lo hace muy adaptable a diferentes estilos y necesidades de desarrollo.
+
+Extensible: Flask cuenta con una amplia gama de extensiones que pueden añadir funcionalidades como autenticación, bases de datos, formularios y más.
+
+Características Principales
+Simplicidad y Legibilidad: El código en Flask tiende a ser sencillo y fácil de entender, lo que facilita el desarrollo y mantenimiento de aplicaciones.
+
+Desarrollo Rápido: Permite a los desarrolladores lanzar aplicaciones rápidamente gracias a su simplicidad y la cantidad mínima de configuración necesaria.
+
+Soporte para Rutas y Plantillas: Flask utiliza Jinja2 como motor de plantillas y Werkzeug como biblioteca WSGI. Esto facilita la creación de rutas (URLs) y la generación de HTML dinámico.
+
+### Dependencias Backend
+El aplicativo contiene las siguientes librerías de python:
+
+blinker==1.7.0
+click==8.1.7
+colorama==0.4.6
+Flask==3.0.2
+Flask-SQLAlchemy==3.1.1
+greenlet==3.0.3
+itsdangerous==2.1.2
+Jinja2==3.1.3
+MarkupSafe==2.1.5
+mysql-connector-python==8.3.0
+SQLAlchemy==2.0.28
+typing_extensions==4.10.0
+Werkzeug==3.0.1
+
+## Base de Datos: My-SQL
+MySQL es uno de los sistemas de gestión de bases de datos relacionales (RDBMS) más populares y ampliamente utilizados en el mundo. Es conocido por su rendimiento, fiabilidad y facilidad de uso. 
+
+## Esquema de Base de Datos Relacional
+![Esquema base de datos](app/static/complementos/crear_entorno_python.PNG)
 
 ## Instrucciones de Ejecución en Codespaces
 
@@ -58,8 +102,7 @@ Esto cambia el prompt de la linea de comando activando el ambiente virtual.
 
 hasta aqui el proceso es similar al de la siguiente imagen:
 
-## Esquema de Base de Datos Relacional
-![Esquema base de datos](app/static/complementos/crear_entorno_python.PNG)
+## Instalación de la Base de Datos
 
 
 3. clonar el repositorio. Ejecutar en linea de comandos:
