@@ -15,8 +15,19 @@
     - [Instalación del Entorno de Pruebas y Desarrollo](#Instalación-del-Entorno-de-Pruebas-y-Desarrollo)
 
 - [Instalación de la base de datos](#Instalación-de-la-base-de-datos)
-- [Creacion de usuario](##Creacion-de-Usuario)
+- [Ejecucuón y Creacion de usuario](#Ejecución-y-Creación-de-Usuario)
+-[Video Pruebas de los Modulos Funcionales](https://www.youtube.com/watch?v=jVo1jvSpDKs)
 
+## Adicionales
+La carpeta statcic/complementos, contiene la siguiente documentación:
+- Diagrama de Clases
+- Diagrama Base de Datos
+- Diagramas y plantillas de casos de uso
+- Historias de Usuarios
+. Especificacion de requerimientos funcionales y no funcionales
+- Interfaces gráficas según requerimientos
+- Script creación de Base de Datos MySQL
+- Script para rellenar datos de pruebas.
 ## Introducción 
 
 Este aplicativo contiene MI proyecto de grado del SENA, el cual es una aplicación para gestión de ordenes de servicio en un taller automotriz.  Parte de una versión anterior del repositorio CarRepairPro_GA7_AA2_EV02. Aqui se espera desarrollar una versión con las mismas funcionalidades, pero más práctica para el despliegue en ambientes tanto pruebas como producción.
@@ -164,8 +175,8 @@ Para adicionar los datos de talbas secundarias ejecute el sscript rellenar_datos
 
 En caso de que quiera validar los cruds correspondientes a actividades anteriores: 
 
-## Creación de Usuario 
-active el servidor de nuevo desde la linea de comandos con el comando **flask run.**
+## Ejecución y Creación de Usuario 
+Active el servidor de nuevo desde la linea de comandos con el comando **flask run.**
 Ingrese a la URL que asigna el servidor
 En el formularo login pulse clic sobre el link  "registrate aquí"
 Ingresa con el usuario y password creado.
