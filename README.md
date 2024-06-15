@@ -2,9 +2,10 @@
 
 ## Indice
 - [Introducción](#Introducción)
-- [INSTRUCCIONES DE EJECUCION DEMO CODESPACES](#INSTRUCCIONES-DE-EJECUCION-DEMO-CODESPACES)
-- [Instancias Inactivas en Codespasces](###Instancias-Inactivas-en-Codespasces)
-- [INSTRUCCIONES INSTALACION DEL APLICATIVO EN ENTORNO DE PRUEBAS PARA WINDOWS](##INSTRUCCIONES-INSTALACION-DEL-APLICATIVO-EN-ENTORNO-DE-PRUEBAS-PARA-WINDOWS)
+- [Instrucciones de ejecución de ambiente de pruebas codespaces de git](#INSTRUCCIONES-DE-EJECUCION-DEMO-CODESPACES)
+    - [Instancias Inactivas en Codespasces](#Instancias-Inactivas-en-Codespasces)
+- [Instalación](#Instalación)
+    - [Instalación en Entorno de Pruebas de Windows](#Instalación-en-Entorno-de-Pruebas-de-Windows)
 - [Esquema Relacional de Base de Datos](##Esquema-de-Base-de-Datos-Relacional)
 - [Instalación de la base de datos](##Instalación-de-la-base-de-datos)
 - [Creacion de usuario](##Creacion-de-Usuario)
@@ -15,7 +16,7 @@ Este aplicativo contiene MI proyecto de grado del SENA, el cual es una aplicaci�
 
 Esta aplicacions consta de un backend elaborado Flask, el cual es un framework web ligero y versátil escrito en Python que se utiliza para crear aplicaciones web rápidas y escalables. Se complementa con la librería SQLAlchemy que proporciona una capa de abstracción sobre las bases de datos relacionales comportándose como un ORM (Mapeo Objeto-Relacional), para  interactuar con la base de datos utilizando objetos y consultas en lugar de escribir SQL directamente. La base de datos está elaborada en Mysql. En los complementos encontrará detalles sobre la base de datos y la estructura del desarrollo en general.
 
-## INSTRUCCIONES DE EJECUCION DEMO CODESPACES
+## Instrucciones de Ejecución en Codespaces
 
 Ingresar al link del repositorio.
 Validar que exista una versión instalada en github codespaces:
@@ -24,7 +25,7 @@ Validar que exista una versión instalada en github codespaces:
 Ejecute la instancia de codespaces.
 
 
-### Instancias Inactivas en Codespasces:
+### Instancias Inactivas en Codespasces
 
 1. Activar el entorno virtual:
 Ejecute: ***source venv/bin/activate***
@@ -41,10 +42,10 @@ Ejecute: ***flask run***
 
 5. EL sistema generará una dirección de acceso a la página. Puede usar ese link para ingresar a realizar las pruebas de la aplicación.  Adicional el sistema preguntará si desea generar un link publico que podrá compartir con otros dispositivos en la web.
 
+## Instalación
+### Instalación en Entorno de Pruebas de Windows
 
-## INSTRUCCIONES INSTALACION DEL APLICATIVO EN ENTORNO DE PRUEBAS PARA WINDOWS
-
-### Instalar el ambiente virtual de python:
+***Instalar el ambiente virtual de python:***
 1. En su máquina (Windows), cree una carpeta para instalar el proyecto. se recomienda usar como nombre "taller_dev". Ingrese a la carpeta y ejecute el siguiente comando para crear el entorno virtual de python:
 
 *python -m venv venv*
