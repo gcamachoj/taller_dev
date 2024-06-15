@@ -3,15 +3,18 @@
 ## Indice
 - [Introducción](#Introducción)
 - [Librerías](#Librerías)
-    - [Backend: Flask](#Backend:-Flask)
+    - [Backend](#Backend)
     - [Dependencias Backend](#Dependencias-Backend)
-    - [Base de Datos: Mysql](#Base-de-Datos:-My-SQL) 
-- [Instrucciones de ejecución de ambiente de pruebas codespaces de git](#INSTRUCCIONES-DE-EJECUCION-DEMO-CODESPACES)
-    - [Instancias Inactivas en Codespasces](#Instancias-Inactivas-en-Codespasces)
+    - [Base de Datos: Mysql](#Base-de-Datos-MySQL) 
+        - [Esquema Relacional de Base de Datos](#Esquema-Relacional-de-Base-de-Datos)
+    - [Front-End](#Front-End)
+        [Jinja](#Jinja)
+- [Ejecución Ambiente de Pruebas desde una Instancia Activa de Github Codespaces](#Ejecución-Ambiente-de-Pruebas-desde-una-Instancia-Activa-de-Github-Codespaces)
+    - [Desde Instancias Inactivas de Github Codespasces](#Desde-Instancias-Inactivas-de-Github-Codespasces)
 - [Instalación](#Instalación)
-    - [Instalación en Entorno de Pruebas de Windows](#Instalación-en-Entorno-de-Pruebas-de-Windows)
-- [Esquema Relacional de Base de Datos](##Esquema-de-Base-de-Datos-Relacional)
-- [Instalación de la base de datos](##Instalación-de-la-base-de-datos)
+    - [Instalación del Entorno de Pruebas y Desarrollo](#Instalación-del-Entorno-de-Pruebas-y-Desarrollo)
+
+- [Instalación de la base de datos](#Instalación-de-la-base-de-datos)
 - [Creacion de usuario](##Creacion-de-Usuario)
 
 ## Introducción 
@@ -23,8 +26,8 @@ Esta aplicacions consta de un backend elaborado Flask, el cual es un framework w
 ## Librerías
 El aplicativo está de sarrollado de la siguiente manera:
 
-### Backend: Flask
-Microframework: Flask es ligero y no incluye herramientas o bibliotecas adicionales que no sean necesarias. Esto lo hace ideal para pequeñas aplicaciones web o servicios web, aunque también puede escalar para proyectos más grandes con la adición de extensiones.
+### Backend 
+Todo el backend está desarrollado en **flask**, el cual es un microframework ligero y no incluye herramientas o bibliotecas adicionales que no sean necesarias. Esto lo hace ideal para pequeñas aplicaciones web o servicios web, aunque también puede escalar para proyectos más grandes con la adición de extensiones.
 
 Flexibilidad: Flask proporciona mucha libertad a los desarrolladores para estructurar su aplicación de la manera que prefieran, sin imponer un patrón específico. Esto lo hace muy adaptable a diferentes estilos y necesidades de desarrollo.
 
@@ -54,13 +57,22 @@ SQLAlchemy==2.0.28
 typing_extensions==4.10.0
 Werkzeug==3.0.1
 
-## Base de Datos: My-SQL
+## Base de Datos MySQL
 MySQL es uno de los sistemas de gestión de bases de datos relacionales (RDBMS) más populares y ampliamente utilizados en el mundo. Es conocido por su rendimiento, fiabilidad y facilidad de uso. 
 
 ## Esquema de Base de Datos Relacional
-![Esquema base de datos](app/static/complementos/crear_entorno_python.PNG)
 
-## Instrucciones de Ejecución en Codespaces
+
+## Front-End
+
+### Jinja
+Para la capa de front-end se ha empleado jinja que es un motor de plantillas para Python que se utiliza comúnmente con frameworks web como Flask y Django para generar HTML dinámico. También se integra con CSS y Bootstrap permitiendo crear una aplicación web estéticamente agradable y responsiva. 
+
+## Esquema Relacional de Base de Datos
+
+![Esquema base de datos](app/static/complementos/ESQUEMA%20RELACIONAL%20DE%20BASE%20DE%20DATOS.png)
+
+## Ejecución Ambiente de Pruebas desde una Instancia Activa de Github Codespaces
 
 Ingresar al link del repositorio.
 Validar que exista una versión instalada en github codespaces:
@@ -68,8 +80,8 @@ Validar que exista una versión instalada en github codespaces:
 
 Ejecute la instancia de codespaces.
 
-
-### Instancias Inactivas en Codespasces
+### Desde Instancias Inactivas de Github Codespasces
+Si la instancias existe en github codespaces pero no está activa siga las siguientes instrucciones:
 
 1. Activar el entorno virtual:
 Ejecute: ***source venv/bin/activate***
@@ -80,14 +92,12 @@ Ejecute: ***sudo service mysql start***
 
 3. Ingresar al directorio ***TALLER_DEV/app***
 
-
 4. Ejecutar iniciacion del servidor flask:
 Ejecute: ***flask run***
 
 5. EL sistema generará una dirección de acceso a la página. Puede usar ese link para ingresar a realizar las pruebas de la aplicación.  Adicional el sistema preguntará si desea generar un link publico que podrá compartir con otros dispositivos en la web.
 
-## Instalación
-### Instalación en Entorno de Pruebas de Windows
+## Instalación del Entorno de Pruebas y Desarrollo
 
 ***Instalar el ambiente virtual de python:***
 1. En su máquina (Windows), cree una carpeta para instalar el proyecto. se recomienda usar como nombre "taller_dev". Ingrese a la carpeta y ejecute el siguiente comando para crear el entorno virtual de python:
@@ -99,15 +109,14 @@ ejecutar:
 ***venv\Scripts\activate***
 
 Esto cambia el prompt de la linea de comando activando el ambiente virtual.
-
-hasta aqui el proceso es similar al de la siguiente imagen:
-
-## Instalación de la Base de Datos
-
+Hasta aquí el proceso es similar al siguiente:
 
 3. clonar el repositorio. Ejecutar en linea de comandos:
 
 ***git clone https://github.com/gcamachoj/taller_dev.git***
+
+![Esquema base de datos](app/static/complementos/crear_entorno_python.PNG)
+<figcaption>Modelo Relacional de base de datos</figcaption>
 
 4. Ingresar a la carpeta app
 5. 
@@ -123,13 +132,13 @@ Este comando creará la ruta del servidor. Ingrese dicha ruta en el explorador d
 
 Debe aparecer el formulario de login. Como aún no está configurada la base de datos, no podrá ingresar aún.
 
+
+
+## Instalación de la Base de Datos
+
 Hasta aqui ya henos instalado la aplicación, pero nos falta crear la base de datos y configurarla en el sistema.
 
 ## Instalación de la base de datos ##
-
-
-![Esquema base de datos](app/static/complementos/ESQUEMA%20RELACIONAL%20DE%20BASE%20DE%20DATOS.png)
-<figcaption>Modelo Relacional de base de datos</figcaption>
 
 7. Cargue la carpeta creada ("taller_dev") "en el IDE "visual studio code" o el IDE de su preferencia. Posteriormente Abra una terminal de linea de comando e ingrese a la **carpeta taller_dev/APP**.
 
