@@ -154,11 +154,9 @@ Debe aparecer el formulario de login. Como aún no está configurada la base de 
 
 Hasta aqui ya henos instalado la aplicación, pero nos falta crear la base de datos y configurarla en el sistema.
 
-## Instalación de la base de datos ##
-
 7. Cargue la carpeta creada ("taller_dev") "en el IDE "visual studio code" o el IDE de su preferencia. Posteriormente Abra una terminal de linea de comando e ingrese a la **carpeta taller_dev/APP**.
 
-8. Para la instalacion de la base de datos desacargue el archivo del script que se encuentra en la ruta taller/dev/static/complementos cuyo nombre es similar a "20240612_script_creación_bd_taller_v9.sql". (Este archivo puede variar en nombre de acuerdo a la version del script):
+8. Para la instalacion de la base de datos desacargue el archivo del script que se encuentra en la ruta ***taller/dev/static/complementos*** cuyo nombre es similar a "20240612_script_creación_bd_taller_v9.sql". (Este archivo puede variar en nombre de acuerdo a la version del script):
 
 9. Cargue el script en su aplicación de MySQL y ejecutelo. El script creará la base de datos "taller" con todas las tablas.  Actualice en su entorno el listado de base de datos para verificar la nueva base de datos existente "taller".
 
