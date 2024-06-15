@@ -18,10 +18,10 @@
 - [Ejecucuón y Creacion de usuario](#Ejecución-y-Creación-de-Usuario)
 
 -[Video Pruebas de los Modulos Funcionales](https://www.youtube.com/watch?v=jVo1jvSpDKs)
-
+-[Documentación Adicional](#Documentación-Adicional)
 ---
 
-## Adicionales
+## Documentación Adicional
 La carpeta statcic/complementos, contiene la siguiente documentación:
 - Diagrama de Clases
 - Diagrama Base de Datos
