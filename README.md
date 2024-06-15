@@ -16,8 +16,10 @@
 
 - [Instalación de la base de datos](#Instalación-de-la-base-de-datos)
 - [Ejecucuón y Creacion de usuario](#Ejecución-y-Creación-de-Usuario)
--[Video Pruebas de los Modulos Funcionales](https://www.youtube.com/watch?v=jVo1jvSpDKs)
--[Documentación Adicional](#Documentación-Adicional)
+
+- [Video Pruebas de los Modulos Funcionales](https://www.youtube.com/watch?v=jVo1jvSpDKs)
+
+- [Documentación Adicional](#Documentación-Adicional)
 
 ---
 
